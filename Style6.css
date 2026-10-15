@@ -1,0 +1,68 @@
+body { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background: #f0f0f0; 
+} 
+ 
+/* Calculator body styling */ 
+.calculator { 
+    background: #222; 
+    padding: 20px; 
+    border-radius: 20px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+} 
+ 
+ 
+/* Display styling */ 
+.display { 
+    background: black; 
+    color: lightgreen; 
+    font-size: 2em; 
+    text-align: right; 
+    padding: 15px; 
+    margin-bottom: 15px; 
+    border-radius: 10px; 
+} 
+ 
+/* Button container styling grid layout */ 
+.buttons { 
+    display: grid; 
+    grid-template-columns: repeat(4, 70px); 
+    grid-template-rows: repeat(5, 70px); 
+    gap: 10px; 
+} 
+ 
+/* Button styling */ 
+button { 
+    font-size: 1.2em; 
+    padding: 20px; 
+    border: none; 
+    border-radius: 10px; 
+    background: darkgray; 
+    color: white; 
+    cursor: pointer; 
+    transition: 0.2s; 
+} 
+ 
+button:hover { 
+    background: grey; 
+} 
+ 
+/* Operator button styling */ 
+.operator { 
+    background: orange; 
+} 
+ 
+/* Equal button styling */ 
+.equal { 
+    background: lightseagreen; 
+    grid-column: span 2; 
+} 
+ 
+/* Clear button styling */ 
+.clear {
+      background: crimson; 
+    grid-row: span 2; 
+} 
